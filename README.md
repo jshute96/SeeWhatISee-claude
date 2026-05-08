@@ -34,7 +34,11 @@ Add the marketplace and install the plugin:
 /plugin install see-what-i-see@see-what-i-see-marketplace
 ```
 
-Note: To avoid permissions prompts in `/see-what-i-see-watch`, add this to `$HOME/.claude/settings.json`, replacing `HOMEDIR` with your home directory (which is printed in the permission prompt.)
+### Avoiding permission prompts
+
+`/see-what-i-see-watch` may trigger permission prompts when restarting to watch for the next screenshot.
+
+To avoid this, add this to `$HOME/.claude/settings.json`, replacing `HOMEDIR` with your home directory (which is printed in the permission prompt):
 
 ```
   "permissions": {
@@ -45,7 +49,9 @@ Note: To avoid permissions prompts in `/see-what-i-see-watch`, add this to `$HOM
   }
 ```
 
-`/see-what-i-see-help` also includes this.
+`/see-what-i-see-help` also includes this suggestion.
+
+[Issue #2](https://github.com/jshute96/SeeWhatISee/issues/2) is about finding a better workaround to avoid permission prompts.
 
 ## Development
 
@@ -55,14 +61,14 @@ The development project is https://github.com/jshute96/SeeWhatISee.
 
 This project can be used alone for experimentation.
 
-## Using the local skills directly
+### Using the local skills directly
 
 If you start `claude` in this project directory, `.claude/settings.json`
 includes configuration that disables (bypasses) the plugin, and symlinks to the
 local skills in `.claude/skills`.  The local skills in this directory will
 then be used instead of the installed plugin.
 
-## Testing the Claude plugin locally
+### Testing the Claude plugin locally
 
 To load the plugin from this directory, set `--plugin-dir`:
 
@@ -70,7 +76,7 @@ To load the plugin from this directory, set `--plugin-dir`:
 claude --plugin-dir $(pwd)/plugin
 ```
 
-## Watching for screenshots from CLI
+### Watching for screenshots from CLI
 
 The scripts used in the skills are also linked under `scripts/`.
 
@@ -80,7 +86,7 @@ scripts/watch.sh          # wait for the next capture, print it, exit
 scripts/watch.sh --loop   # keep printing captures until ^C
 ```
 
-## Updating the Claude plugin in marketplace
+### Updating the Claude plugin in marketplace
 
 The plugin won't update if the version is the same.
 
