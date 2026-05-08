@@ -1,0 +1,24 @@
+{
+  "name": "see-what-i-see-marketplace",
+  "owner": {
+    "name": "Jeff Shute",
+    "email": "jshute@gmail.com"
+  },
+  "metadata": {
+    "description": "Get screenshots from the SeeWhatISee Chrome extension"
+  },
+  "plugins": [
+    {
+      "name": "see-what-i-see",
+      "description": "Get screenshots from the SeeWhatISee Chrome extension",
+      "version": "1.0.5",
+      "author": {
+        "name": "Jeff Shute",
+        "email": "jshute@gmail.com"
+      },
+      "homepage": "https://github.com/jshute96/SeeWhatISee",
+      "source": "./plugin",
+      "keywords": ["screenshot"]
+    }
+  ]
+}
