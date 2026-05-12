@@ -81,16 +81,6 @@ To load the plugin from this directory, set `--plugin-dir`:
 claude --plugin-dir $(pwd)/plugin
 ```
 
-### Watching for screenshots from CLI
-
-The scripts used in the skills are also linked under `scripts/`.
-
-```bash
-scripts/get-latest.sh     # print the latest capture record
-scripts/watch.sh          # wait for the next capture, print it, exit
-scripts/watch.sh --loop   # keep printing captures until ^C
-```
-
 ### Updating the Claude plugin in marketplace
 
 The plugin won't update if the version is the same.
