@@ -17,18 +17,4 @@ Commands:
                                 Look at them when they appear.
 * `/see-what-i-see-stop`  - Stop background watcher.
 * `/see-what-i-see-help`  - See this help.
-
-Fixing permission prompts:
-
-If you get permissions prompts for `/see-what-i-see-watch`, you can fix them by
-adding this to `$HOME/.claude/settings.json`.
-
-```
-  "permissions": {
-    "allow": [
-      "Bash($HOME/.claude/plugins/cache/see-what-i-see-marketplace/**)",
-      "Read(~/Downloads/SeeWhatISee/**)"
-    ]
-  }
-```
 """

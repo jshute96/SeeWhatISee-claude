@@ -39,25 +39,6 @@ Add the marketplace and install the plugin:
 /plugin install see-what-i-see@see-what-i-see-marketplace
 ```
 
-### Avoiding permission prompts
-
-`/see-what-i-see-watch` may trigger permission prompts when restarting to watch for the next screenshot.
-
-To avoid this, add this to `$HOME/.claude/settings.json`, replacing `HOMEDIR` with your home directory (which is printed in the permission prompt):
-
-```
-  "permissions": {
-    "allow": [
-      "Bash(HOMEDIR/.claude/plugins/cache/see-what-i-see-marketplace/**)",
-      "Read(~/Downloads/SeeWhatISee/**)"
-    ]
-  }
-```
-
-`/see-what-i-see-help` also includes this suggestion.
-
-[Issue #2](https://github.com/jshute96/SeeWhatISee/issues/2) is about finding a better workaround to avoid permission prompts.
-
 ## Development
 
 This GitHub project stores the released version of the Claude plugin.
