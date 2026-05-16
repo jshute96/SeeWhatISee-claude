@@ -13,7 +13,7 @@ Start a background loop that watches for new captures from the SeeWhatISee Chrom
 1. **Start the watcher.** Use the `Monitor` tool with:
    - `command`: `${CLAUDE_SKILL_DIR}/scripts/watch.sh`
    - `persistent`: `true`
-   - `description`: `"see-what-i-see-watch"`
+   - `description`: `see-what-i-see-watch`
 
    Each line of stdout from the script is one capture record, delivered as its own notification. (`watch.sh` auto-kills any previous watcher via its `.watch.pid` file, so no manual guard is needed.)
 

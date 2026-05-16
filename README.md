@@ -38,6 +38,22 @@ Add the marketplace and install the plugin:
 /plugin install see-what-i-see@see-what-i-see-marketplace
 ```
 
+### Avoiding permission prompts (Optional)
+
+`/see-what-i-see-watch` triggers a permission prompt when it reads screenshot files after a background notification.
+
+Add this to `$HOME/.claude/settings.json` to avoid those prompts.
+
+```json
+{
+  "permissions": {
+    "allow": [
+      "Read(~/Downloads/SeeWhatISee/**)"
+    ]
+  }
+}
+```
+
 ## Development
 
 This GitHub project stores the released version of the Claude plugin.
